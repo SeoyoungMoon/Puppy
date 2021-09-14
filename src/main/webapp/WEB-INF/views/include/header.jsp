@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!DOCTYPE html>
 <html lang="ko">
@@ -11,7 +12,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
 </head>
-<body>
     <!-- 헤더 영역-->
     <header>
         <div class="header clearfix">
@@ -23,42 +23,44 @@
                         <a href="/sitemap" style="font-weight: normal;">사이트맵</a>
                     </div>
                     <div class="hleft">
-                        <a href="/" class="move"><img src="./img/simbol.png" alt="댕댕이 유치원"></a>
-                        <a href="/" class="move"><img src="./img/facebook.png" alt="페이스북"></a>
-                        <a href="/" class="move"><img src="./img/insta.png" alt="인스타"></a>
-                        <a href="/" class="move"><img src="./img/tube.png" alt="유튜브"></a>
+
+                        <a href="<c:url value='/puppy'/>" class="move"><img src="<c:url value='/img/simbol.png'/>" alt="댕댕이 유치원"></a>
+                        <a href="/" class="move"><img src="<c:url value='/img/facebook.png'/>" alt="페이스북"></a>
+                        <a href="/" class="move"><img src="<c:url value='/img/insta.png'/>" alt="instar"></a>
+                        <a href="/" class="move"><img src="<c:url value='/img/tube.png'/>" alt="유튜브"></a>
+
                     </div>
                 </div>
             </div>
             <div class="logo">
-                    <a href="/" target="_blank"><img src="./img/logo.png" alt="댕댕이 유치원"></a>
+                    <a href="<c:url value='/puppy'/>" target="_blank"><img src="<c:url value='/img/logo.png'/>" alt="댕댕이 유치원"></a>
             </div>
             <nav>
                 <div class="menu_area">
                     <ul class="menu">
                         <li class="menu-li">
-                            <a href="/reserve" class="menu-li-a">예약하기</a>
+                            <a href="<c:url value='/reserve'/>" class="menu-li-a">예약하기</a>
                         </li>
                         <li class="menu-li">
-                            <a href="/info" class="menu-li-a">이용안내</a>
+                            <a href="<c:url value='/notice'/>" class="menu-li-a">이용안내</a>
                             <ul class="second">
                                 <li>
-                                    <a href="/info">이용안내</a>
+                                    <a href="<c:url value='/notice'/>">이용안내</a>
                                 </li>
                                 <li>
-                                    <a href="/info/pickup">픽업서비스</a>
+                                    <a href="<c:url value='/pickupService'/>">픽업서비스</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="menu-li">
                             <a href="/service" class="menu-li-a">주요서비스</a>
                             <ul class="second">
-                                <li><a href="/service/dayCare">호텔&데이케어</a></li>
-                                <li><a href="/service/facility">유치원</a></li>
-                                <li><a href="/service/beauty">애견미용</a></li>
-                                <li><a href="/service/studio">스튜디오</a></li>
-                                <li><a href="/service/medical">메디컬센터</a></li>
-                                <li><a href="/service/specialCare">스페셜케어</a></li>
+                                <li><a href="<c:url value='/service/hotel'/>">호텔&데이케어</a></li>
+                                <li><a href="<c:url value='/service/preschool'/>">유치원</a></li>
+                                <li><a href="<c:url value='/service/grooming'/>">애견미용</a></li>
+                                <li><a href="<c:url value='/service/studio'/>">스튜디오</a></li>
+                                <li><a href="<c:url value='/service/medicalCenter'/>">메디컬센터</a></li>
+                                
                             </ul>
                             
                         </li>
@@ -73,13 +75,13 @@
                         <li class="menu-li">
                             <a href="/community" class="menu-li-a">커뮤니티</a>                            
                             <ul class="second">
-                                <li><a href="/community/freeboard">자유게시판</a></li>
+                                <li><a href="board/freeboard">자유게시판</a></li>
                                 <li><a href="/community/showboard">뽐내기게시판</a></li>
                                 <li><a href="/community/showboard">QnA</a></li>
                             </ul>
                         </li>
                         <li class="menu-li">
-                            <a href="/professional" class="menu-li-a">전문진소개</a>
+                            <a href="<c:url value='/professional'/>" class="menu-li-a">전문진소개</a>
                         </li>
                     </ul>
                     
