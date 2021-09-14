@@ -10,12 +10,29 @@
     
     <section>
         <article class="main-container" style="text-align: center;">
-            <ul class="cnt" >
-                <li><img src="./img/ex1.png" alt="ex1"></li>
-            </ul>
-            <div class="btn">
-                <button type="button" class="prev">&#10094;</button>
-                <button type="button" class="next">&#10095;</button>
+            <div id="main-wrap">
+                <div id="banner">
+                    <div class="cnt">
+                        <ul>
+                            <li class="cnt_0"><img src="./img/banner.jpg" alt="강하지유치원은 보호자가 반려견과 함께 더 나은 삶을 가꾸어 나가는 것을 최선의 가치로 삼고있습니다. "></li>
+                            <li class="cnt_1"><img src="./img/ex1.png" alt="강하지유치원은 보호자가 반려견과 함께 더 나은 삶을 가꾸어 나가는 것을 최선의 가치로 삼고있습니다. "></li>
+                            <li class="cnt_2"><img src="./img/banner.jpg" alt="강하지유치원은 보호자가 반려견과 함께 더 나은 삶을 가꾸어 나가는 것을 최선의 가치로 삼고있습니다. "></li>
+                            <li class="cnt_3"><img src="./img/ex1.png" alt="강하지유치원은 보호자가 반려견과 함께 더 나은 삶을 가꾸어 나가는 것을 최선의 가치로 삼고있습니다. "></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="list_num">
+                    <ul class="btn_brown">
+                        <li class="on"><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <button type="button" class="prev">&#10094;</button>
+                    <button type="button" class="next">&#10095;</button>
+                </div>
             </div>
         </article>
         <article class="main-container">
@@ -163,9 +180,100 @@
             </div>
         </article>
     </section>
-
+	
 
     <%@ include file="./include/footer.jsp" %>
 
+	<script>
+        $(document).ready(function () {
+
+           
+
+            /* ---------------------슬라이드(케럿)---------------------------*/
+            const cnt = $("#banner .cnt > ul > li");
+            const button = $("#list_num > ul > li");
+            const arrow = $(".btn > button");
+            let current = 0;
+            let setIntevalId;
+
+            button.on({
+                click: function () {
+                    const tg = $(this);
+                    const i = tg.index();
+                    button.removeClass('on');
+                    tg.addClass('on');
+                    move(i);
+                }
+            });
+            $('#banner').on({
+                mouseover: function () {
+                    clearInterval(setIntevalId);
+                },
+                mouseout: function () {
+                    timer();
+                }
+            });
+
+
+            function timer() {
+                setIntevalId = setInterval(function () {
+                    let n = current + 1;
+                    if (n == cnt.length) {
+                        n = 0;
+                    }
+                    button.eq(n).trigger('click');
+                }, 5000);
+            }
+            timer();
+
+            function move(i) {
+                if (current == i) return;
+                let currentEl = cnt.eq(current);
+                let nextEl = cnt.eq(i);
+
+                currentEl.css({
+                    left: 0
+                }).stop().animate({
+                    left: '-100%'
+                });
+                nextEl.css({
+                    left: '100%'
+                }).stop().animate({
+                    left: 0
+                });
+                current = i;
+            }
+            /*화살표 슬라이드*/
+            let i = 0;
+            let index = 0;
+            $("#list_num ul li").on('click', function () {
+                index = $(this).index();
+                i = index;
+            });
+
+            $(".prev").click(function () {
+                i--;
+                console.log(i);
+                if (i < 0) {
+                    i = $("#banner .cnt li").length - 1;
+                }
+                $("#list_num li").eq(i).trigger('click');
+            });
+            $(".next").click(function () {
+                console.log(i);
+                i++;
+                console.log("after(: )" + i);
+                if (i >= $("#banner .cnt ul li").length) {
+                    i = 0;
+                }
+
+                $("#list_num li").eq(i).trigger('click');
+            });
+
+
+            /* ---------------------슬라이드(케럿끝)---------------------------*/
+
+        });
+    </script>
   
 
