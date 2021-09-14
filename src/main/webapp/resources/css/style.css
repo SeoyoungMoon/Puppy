@@ -1,0 +1,3076 @@
+
+/*======= 웹 폰트 선언 =======*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+/* 디자인 시작 시 기본적으로 선언하는 문법 */
+* {
+    /* 기본 선언: 마진, 패딩 0, 요소 크기를 border를 기준으로.*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    min-width: 320px;
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+img {
+    max-width: 100%; /*사이즈가 변해도 넓이를 유지*/
+    height: auto; /* 사이즈가 변해도 비율을 유지 */
+}
+
+/*
+input, textarea, button, select {
+     고유하게 적용되어있는 form 관련 요소들을 제거해서
+     여러 브라우저에서 동일한 디자인을 얻게 함.
+    -webkit-appearance: none; 크롬, 사파리
+    -moz-appearance: none; 파이어폭스
+    appearance: none; ie, edge
+    border: none;
+}
+*/
+
+
+
+ul, ol, dl, li {
+    /*리스트 스타일은 사용할 일이 많지 않아요.*/
+    list-style: none; 
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 공통 스타일 */
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+section {
+    margin-top: 290px;
+}
+.wrap {
+    width: 1140px;
+    height: auto;
+    margin: 0 auto;
+}
+.main-container{
+    width: 100%;
+    text-align: center;
+}
+
+table, tr, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/*======= 예약안내/이용안내 페이지 =======*/
+.title {
+    padding-top: 120px;
+    line-height: 40px;
+}
+
+.mainBody {
+    text-align: left;
+}
+
+
+.left, .right{
+    width: 49%;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+    padding-left: 20px;
+}
+.list-group{
+    border: 1px #996633 solid;
+    font-size: 14px;
+}
+.list-group-item{
+    border-bottom: 1px #996633 solid;
+    padding: 1em;
+    line-height: 20px;
+}
+.list-group-item:last-child{
+    border-bottom: none;
+}
+
+.list-group-item img {
+    width: 24px;
+    padding-right: 5px;
+}
+.list-group-item .pick-margin{
+    margin: 10px 5px;
+}
+.info{
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+.noti-info{
+    margin: 29px 0;
+}
+
+.reserve_form input, .reserve_form select, .reserve_form textarea{
+    width: 100%;
+    
+    padding-left: 5px; 
+}
+.reserve_form input, .reserve_form select{
+    height: 30px;
+ 
+}
+.reserve_form textarea{
+    height: 170px;
+}
+
+.reserve_btn{
+    width: 100%;
+    background-color: #996633;
+    border: 0px;
+    border-radius: 5px;
+    height: 40px;
+    font-weight: bold;
+    color:#fff;    
+}
+.reserve_input{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.img_block{
+    float: left;
+    margin-right: 20px;
+}        
+.img_block img {
+    width: 65px;
+}
+.info_block{
+    float: left;
+    margin-left: 10px;
+    width: 75%;
+}
+.notice-text {
+    line-height: 35px;
+    float: left;
+    text-align: left;
+}
+.title>h2 {
+            
+    margin: 0 auto;
+    font-size: 2.0rem;
+    font-weight: bold;
+    text-align: center;
+
+}
+.info_block>h3 {
+   
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.f-left{
+    float: left;
+}
+
+.list-group {
+    border: 1px #996633 solid;
+    text-align: left;
+}
+
+
+.list-group-item:last-child {
+    border-bottom: 0px;
+    padding: 1em;
+}
+
+
+/*================ 픽업서비스 ==================*/
+
+.pick-title {
+    width: 80%;
+    height: 150px;
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.mainBody {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+.list-group-item {
+    border-bottom: 1px #996633 solid;
+    padding: 1em;       
+}
+
+
+
+.pick-title h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.info_block h4 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+
+.all {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* .pick-img {
+    padding-top: 3.5em;
+} */
+
+
+.reservation {
+    padding-left: 5px;
+}
+
+
+/*======= 서비스 - 그루밍 페이지, 메디컬센터,스튜디오 =======*/
+
+.service-container {
+    margin-top: 2em;
+    display: inline-block;
+}
+
+.service-container h3 {
+    margin-bottom: 50px;
+    margin-top: 5em;  /*고품격이랑 제목사진 사이 간격*/
+}
+
+.main_txt {
+    margin-top: 75px;
+}
+
+.main_txt> p {
+    margin-top: 25px;
+}
+
+.service-list{
+    line-height: 1.5em;
+    float:left;
+    width:33%;
+    padding: 10px;
+}
+
+.g-wrap{
+    margin-top: 100px;  
+}
+
+.g-wrap h4{
+    font-weight: bold;
+}
+.service-list{
+    float:left;
+    width:33%;
+    padding: 10px;
+}
+
+.studio-list {
+    float:left;
+    width:49%;
+    padding: 10px;
+}
+
+
+.portfolio{
+    margin-top: 200px;
+    
+}
+.portfolio h3 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.img_list img{
+    padding-bottom: 10px;
+    padding: 2.5px;
+    width: 370px;
+    height: 500px;
+}
+
+/*===========서비스 - 호텔 페이지===============*/
+
+.hena {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.hena h3 {
+    font-size: 30px;
+    padding: 30px 0 20px;
+    
+}
+.hena p {
+    font-size: 20px;
+}
+.hena img {
+    width: 100%;
+    
+}
+.intro{
+    height: 1100px;
+}
+.intro h4 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.intro p {
+    font-size: 15px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.hotel-left {
+    float: left;
+    height: 500px;
+    width: 49%;
+    margin: 20px auto;
+}
+
+.hotel-right {
+    float: right;
+    height: 500px;
+    width: 45%;
+    margin: 20px auto;
+}
+
+.hotel-room {
+    margin-top: 50px;
+}
+
+.hotel-room h2 {
+    font-size: 30px;
+    margin: 100px;
+}
+
+
+.hotel-txt{
+    margin: 40px;
+}
+.hotel-txt h4 {
+    font-size: 30px;
+    padding-bottom: 30px;
+}   
+.hotel-txt p {
+    font-size: 15px;
+    line-height: 25px;
+}   
+
+
+/*==============서비스 - 유치원==============*/
+
+
+
+.educationSystem {
+    padding-top: 2em;
+    margin-top: 15em; /*표랑 고품격 사이의 간격*/
+}
+
+.educationSystem h3 {
+    margin-bottom: 20px;
+}
+
+.edulist {
+    width: 100%;  /*표 오른쪽 너비*/
+    background-color: blanchedalmond;
+    text-align: center;
+    
+}
+
+.edulist tr td {
+    padding: 30px;
+}
+
+.in {
+    margin-top: 10em;  /*표랑 국내최고의 시설 사이 간격*/
+}
+.in div {
+    margin: 20px auto;
+}
+.in div img {
+    margin-bottom: 20px;
+}
+
+.pres-price {
+    margin-top: 5em;  /*이용가격이랑 국내최고의시설 사이 간격*/
+}
+
+.monthPrice {
+    width: 100%;
+    margin-top: 2em;
+}
+
+.monthPrice tr td {
+    padding: 30px;
+    background-color: blanchedalmond;
+}
+
+
+/*======= 전문진 소개 페이지 =======*/
+.comment{
+    padding-top: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 130px;
+    color: #996633;
+}
+
+.person {
+    margin: 80px auto ;
+}
+
+.person img{
+    float: left;
+    width: 45%;
+    height: auto;
+    padding-right: 50px;
+
+}
+
+.person h3{
+    font-weight: bold;
+    width: 180px;
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 28px;
+    border-left: #996633 3px solid;
+    padding-left: 10px;
+}
+.person ul {
+    padding-bottom: 20px;
+    margin-left: 20px;
+    float: right;
+    width: 50%;
+    border-top: 1px #996633 solid;
+}
+.person ul li {
+    text-align: left;
+    height: 50px;
+    border: 1px #996633 solid;
+    border-top: none;
+    padding: 15px 20px;
+
+};
+
+
+/*================사이트 맵====================*/
+.sitemap-title {
+    padding-top: 30px;
+}
+
+.sitemap-title h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sitemap-map-group {
+    margin-top: 100px;
+    float: left;
+    width: 16.6%;
+    height: 500px;
+}
+
+.sitemap-map-group-item {
+    margin: 5px 20px;
+    padding-top: 15px;
+    text-align: left;
+    border-top: 10px #996633 solid;
+    color: #996633;
+    font-weight: bolder;
+}
+
+.sitemap-map-group-item h4 {
+    font-size: 1.2rem;
+}
+
+.sitemap-map-block {
+    border-top: none;
+    margin: 5px 20px;
+    padding-top: 30px;
+    height: 300px;
+    line-height: 3em;
+    text-align: left;
+}
+.sitemap-map-block li a {
+    color: #000;
+}
+.sitemap-map-block li a:hover {
+    color: #996633;
+}
+
+
+/*======= QnA 페이지 =======*/
+
+
+
+.FAQ{
+    text-align: left;
+    height: 100%;
+}
+
+.FAQ .list ul {
+    padding-left: 20px;
+}
+
+.FAQ .question{
+    font-size: 18px;
+    height: 50px;
+    border-bottom: #996633 1px solid;
+    padding: 14px 5px;
+}
+
+.FAQ .answer {
+    display: none;
+    font-size: 18px;
+    height: 50px;
+    padding: 14px 20px;
+}
+
+.personal{
+    padding-top: 50px;
+    text-align: left;
+}
+
+.personal p {
+
+    font-size: 17px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+
+/*======= 공동구매 - 강아지용품 =======*/
+
+.product {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.item{
+    display: inline-block; 
+    width: 250px;
+    margin: 15px;  
+}
+
+.item .align {
+    text-align: left;
+}
+.item .category {
+    color:#996633;
+    font-size: 15px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+.item .p-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.item .p-price {
+    font-weight: 800;
+    font-size: 15px;
+}
+.item .p-price .cost {
+    font-weight: 500;
+    font-size: 13px;
+    padding-left: 10px;
+    color: grey;
+    text-decoration:line-through;
+}
+.item a {
+    color:#000;
+}
+.item a:hover .p-title {
+    color:#996633;
+}
+
+.item img{ 
+    width: 250px;
+    height: 250px;
+    padding-bottom: 15px;
+}
+.search{
+    float: right;
+    padding-bottom: 30px;
+}
+.sidemenu {
+    position: fixed;
+    top: 300px;
+    left:200px;
+    z-index: 10;
+}
+
+.sidemenu ul li a{
+    display: block;
+    color: #fff;
+    background: #996633;
+    width: 120px;
+    height: 50px;
+    margin-bottom: 2px;
+    padding: 15px 10px;
+}
+.sidemenu ul li .page{
+    color: #000;
+    background: #fff;
+    font-weight: bold;
+    width: 120px;
+    height: 50px;
+    margin-bottom: 2px;
+    padding: 15px 10px;
+}
+
+.sidemenu ul li a:hover{
+    color: #000;
+    background: #fff;
+    font-weight: bold;
+    width: 120px;
+    height: 50px;
+    margin-bottom: 2px;
+    padding: 15px 10px;
+}
+
+
+/*==================== 뽐내기게시판 =======================*/
+
+
+
+#boast-products {
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 80px;
+}
+#boast-products h2 {
+    padding: 50px;
+    font-size: 35px;
+    color: #996633;
+}
+
+#boast-products li {
+    display: inline-block;
+    width: 350px;
+    height: 400px;
+    margin: 30px 10px;
+    position: relative;
+}
+#boast-products li .hover{
+    display: none;
+    position: absolute;
+    top:0px;
+    left: 25px;
+    height: 300px;
+    width: 300px;
+    background-color: rgba(153, 102, 51, 0.6);
+}
+#boast-products li .hover img{
+    width: 22px; 
+}
+#boast-products li .hover span{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff; 
+}
+#boast-products li .hover .span-left{
+    position: absolute;
+    top:48%;
+    left:40%;
+}
+#boast-products li .hover .span-right{
+    position: absolute;
+    top:48%;
+    left:65%;
+}
+
+#boast-products li .hover .hover-left{
+    position: absolute;
+    top:48%;
+    left:30%;
+}
+#boast-products li .hover .hover-right{
+    position: absolute;
+    top:48%;
+    left:55%;
+}
+
+#boast-products li a {
+    color: #000;
+}
+#boast-products li a:hover {
+    color: #996633;
+}
+#boast-products li .boastimg {
+    height: 300px;
+    width: 300px;
+    aspect-ratio: auto 1 / 1;
+}
+#boast-products li .align {
+    text-align: left;
+    margin: 0 auto;
+}
+
+#boast-products li .p-title {
+    padding-top: 10px;
+    font-size: 18px;
+    width: 300px;
+    height: 50px;
+    
+}
+#boast-products li .p-price {
+    font-size: 15px;
+    font-weight: bold;
+    color: #636363;
+    width: 300px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+#boast-products li .like {
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+
+#boast-products li .num {
+    padding-left: 5px;
+    
+}
+.boast-paging {
+    margin: 0 auto;
+    text-align: center;
+
+
+}
+.boast-page {
+    display: inline;
+}
+.boast-write-btn{
+    width: 120px;
+    height: 30px;
+    float: right;
+    margin-right: 45px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    background: #996633;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.boast-paging button {
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    background: #996633;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    padding: 3px 5px;
+}
+
+.boast-comment-btn{
+    width: 30px;
+    height:30px;
+   
+    float: right;
+    border: white;
+    margin-right: 5px;
+}
+
+.boast-like-btn{
+    width: 35px;
+    height: 30px;
+   
+    float: right;
+    border: white;
+
+}
+
+
+/*=========== 자유게시판 ==============*/
+
+.freeboard-title {
+    font-size: 25px;
+    color: #996633;
+}
+
+.freeboard-sort {
+    text-align: right;
+    margin: 100px auto 0;
+}
+
+.freeboard-list {
+    margin: 20px auto 0;
+}
+
+.freeboard-table {
+    width: 100%;
+    
+}
+
+.freeboard-table th {
+    background-color: #996633;
+    color: #fff;
+    padding: 15px;
+}
+
+.freeboard-table td{
+    padding: 20px 0;
+}
+
+.freeboard-paging {
+    margin: 0 auto;
+
+}
+
+.freeboard-page {
+    display: inline;
+}
+.freeboard-search{
+    margin-top: 50px;
+}
+.freeboard-search select{
+    height: 25px;
+}
+.freeboard-search input{
+    width: 300px;
+    height: 25px;
+    margin: auto 20px;
+}
+.freeboard-write-btn{
+    float: right;
+    margin: 20px 0;
+    padding: 6px 15px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    background: #996633;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.freeboard-btn{
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    background: #996633;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    padding: 3px 5px;
+}
+.serch-btn {
+    padding: 4px 15px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    background: #996633;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+}
+.freenum {
+    width: 90px;
+}
+.freehit {
+    width: 120px;
+}
+.freeregdate {
+    width: 150px;
+}
+.freewrite {
+    width: 200px;
+}
+
+
+
+/*=======================마이페이지===========================*/
+
+.mypage-wrap {
+    border-bottom: 1px gray solid;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.mypage-wrap1 {
+    border-bottom: 1px gray solid;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.mypage-title {
+    margin-bottom: 100px;
+}
+
+.mypage-title h2 {
+    text-align: center;
+    font-size: 28px;
+
+}
+
+.mypage-profile {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.mypage-profile img {
+    width: 50px;
+}
+
+.mypage-bucket {
+    float: right;
+    width: 50px;
+    margin-right: 50px;
+}
+
+.mypage-menu {
+    width: 25%;
+    float: left;
+    padding: 50px;
+}
+
+.mypage-menu img {
+    width: 70px;
+}
+  /*======= 마이페이지 - 내가 쓴 글, 댓글 목록 =======*/
+
+  .myArticle h3, .myComment h3{
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+ 
+.myArticle table, .myArticle td, .myArticle th{
+    border: 1px solid black;
+    border-collapse : collapse;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.myArticle th{
+    background-color: lightgray;
+}
+
+.myArticle td,.myArticle th{
+    height: 40px;
+}
+
+.myArticle table{
+    width: 700px;
+    margin-bottom: 30px;
+} 
+
+.pagination{
+    text-align: center;
+    padding-bottom: 50px ;
+    margin-bottom: 30px;
+}
+
+/*======= 마이페이지 - 예약 내역 =======*/
+
+.myReserve h3{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.myReserve tr button {
+    width: 50px;
+}
+
+.myReserve p{
+    width: 350px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: lightgray;
+    margin: 0 auto;
+    
+}
+
+.myReserve table{
+    margin-top: 20px;
+}
+
+/*======= 마이페이지 - 찜한 상품 =======*/
+
+.myZzim h3{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.myZzim #left img{
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 150px;
+    height: 150px;
+}
+
+.myZzim #delBtn {
+    width: 30px;
+    height: 30px;
+}
+
+.myZzim td, .myZzim th{
+    border-left: none;
+    border-right: none;
+}
+
+.myZzim table{
+    width: 800px;
+
+}
+.myZzim p{
+    text-align: left;
+    
+}
+.myZzim span{
+    padding-bottom: 20px;
+    line-height:24px;
+}
+
+.myZzim #left{
+    width: 30%;
+}
+.myZzim #right{
+    padding-left: 20px;
+}
+
+/*======= 자유게시판 - 상세보기 페이지 =======*/
+        .writetitle{
+            padding: 100px;
+            font-size: 30px;
+            color: #996633;
+        }
+
+        .freetitle {
+            border-bottom: #996633 1px solid;
+            padding-bottom: 10px;
+        }
+        .freetitle h4 {
+            font-size: 25px;
+            padding-bottom: 10px;
+        }
+        .freetitle p .hit {
+            padding-left: 20px;
+        }
+        .freecontent {
+            margin: 10px 0;
+            width: 1140px;
+            height: 350px;           
+            border: #ccc 1px solid;
+        }        
+        .freecontent .content {
+            padding: 8px;
+        }
+
+        .freeBtn{
+            margin-right: 5px;
+            display: inline-block;
+            padding: 6px 15px;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 3px;
+            background: #996633;
+            outline: 0;
+            border: 0;
+            color: #fff;
+            cursor: pointer;
+        }
+        .btnright{
+            float: right;
+            margin-right: 0px;
+        }
+   
+        .commentArea{ /*댓글 입력창*/
+            width: 880px;
+            height: 80px;
+            border: none;
+            /* margin-left: 52px; */
+        }
+        #replyList {
+            margin-top: 50px;
+        }
+
+        .reply-image{
+            float: left;
+            width: 35px;
+            height: 35px;
+        }
+
+        /* 댓글 목록 */
+        .reply-group{  
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 1140px;
+            /* margin-left: -40px; */
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+        }
+
+        .reply-group .reply-left{
+            float: left;
+            margin-left: 10px;            
+        }
+
+        .reply-group .reply-right{ /*댓글 수정, 삭제 버튼*/
+            float: right;
+            width: 40px;
+            height: 30px;
+            margin-right: 5px;
+            
+        }
+
+        .reply-group p {
+            float: left;
+            margin-left: 30px;
+
+        } 
+        .reply-content {
+            margin-bottom: 30px;
+        }
+        .commentArea {
+            float: left;
+            width: 1050px;
+            height: 100px;
+            border: 1px solid #996633;
+            padding: 10px;
+        }
+        
+        .registCom { /*댓글 등록하기 버튼*/
+            width: 80px;
+            height: 100px;
+            margin-left: 10px;
+            display: block;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 3px;
+            background: #996633;
+            outline: 0;
+            border: 0;
+            color: #fff;
+            cursor: pointer;
+            float: left;
+        }
+        
+        
+        /* ================boardModify================*/
+        .writetitle{
+            padding: 100px;
+            font-size: 30px;
+            color: #996633;
+        }
+        .boardWrite{
+            text-align: left;
+            margin-bottom: 100px;
+        }
+        .wrap .boardWrite button{ 
+            display: inline-block;
+            padding: 6px 15px;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 3px;
+            background: #996633;
+            outline: 0;
+            border: 0;
+            color: #fff;
+            cursor: pointer;
+        }.wrap .boardWrite button:hover { 
+
+        }
+        .wrap .boardWrite .regBtn{
+            margin-right: 5px;
+            float: right;
+        }
+        .wrap .boardWrite .listBtn{
+            margin-right: 5px;
+            float: right;
+        }
+        .wrap .boardWrite .photoBtn {
+            margin-top:10px ;
+            padding: 8px 20px;
+        }
+        
+        .boardWrite .form-control{
+            width: 1140px;
+            height: 35px;
+            margin-top: 10px;
+            padding: 5px;
+        }
+        .boardWrite .imgbox{
+            border: 1px #000 solid;
+            width: 1140px;
+            height: 120px;
+            margin-top: 10px ;
+        }
+        .boardWrite .textArea {
+            width: 1140px;
+            margin-top: 10px;
+            padding: 15px;
+        }
+        .boardWrite td.t-title {
+            width: 150px;
+            height: 50px;
+            font-size: 15px;
+        }
+        .boardWrite td{
+            padding: 7px;
+        }
+        
+        
+        
+        /* 글쓰기 */
+        .writetitle{
+            padding: 100px;
+            font-size: 30px;
+            color: #996633;
+        }
+        .boardWrite{
+            text-align: left;
+            margin-bottom: 100px;
+        }
+        .wrap .boardWrite button{ 
+            display: inline-block;
+            padding: 6px 15px;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 3px;
+            background: #996633;
+            outline: 0;
+            border: 0;
+            color: #fff;
+            cursor: pointer;
+        }.wrap .boardWrite button:hover { 
+            box-shadow: 0 9px #999;;
+        }
+        .wrap .boardWrite .regBtn{
+            margin-right: 5px;
+            float: right;
+        }
+        .wrap .boardWrite .listBtn{
+            margin-right: 5px;
+            float: right;
+        }
+        .wrap .boardWrite .photoBtn {
+            margin-top:10px ;
+            padding: 8px 20px;
+        }
+        
+        .boardWrite .form-control{
+            width: 1140px;
+            height: 35px;
+            margin-top: 10px;
+            padding: 5px;
+        }
+        .boardWrite .imgbox{
+            border: 1px #000 solid;
+            width: 1140px;
+            height: 120px;
+            margin-top: 10px ;
+        }
+        .boardWrite .textArea {
+            width: 1140px;
+            margin-top: 10px;
+            padding: 15px;
+        }
+        .boardWrite td.t-title {
+            width: 150px;
+            height: 50px;
+            font-size: 15px;
+        }
+        .boardWrite td{
+            padding: 7px;
+        }
+        
+        
+        /* boastDetail*/
+        .modal-wrap {
+            /*display: none;*/
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .modal {
+            /*display: none;*/
+            width: 1000px;
+            height: 600px;
+            position: absolute;
+            top: 45%;
+            left: 35%;
+            margin: -250px 0 0 -250px;
+            background: #fff;
+            z-index: 2;
+        }
+
+        .modal_close {
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .boast-pic {
+            width: 600px;
+            height: 100%;
+        }
+        .boast-pic img {
+            width: 600px;
+            height: 600px;
+        }
+        .boast-content {
+            width: 390px;
+            height: 600px;
+            position: absolute;
+            top: 0;
+            right:0;
+            padding: 10px 0;
+            margin-left: 10px ;
+            border-left: solid 1px #ccc;
+        }
+
+        .boast-content .boast-writer {
+            width: 385px;
+            padding: 5px 10px 10px;
+            border-bottom: solid 1px #ccc;
+            font-weight: bold;
+        }
+
+        .boast-text {
+            font-size: 12px;
+        }
+        .boast-text .text {
+            margin-top: 10px;
+            width: 385px;
+            height: 180px;
+            border: none;
+            border-bottom: solid 1px #ccc;
+            padding: 5px 10px;
+        }
+        
+        .boast-content .likearea {
+            width: 385px;
+            /* border-bottom: solid 1px #ccc; */
+            height: 40px;
+            position: relative;
+        }
+        
+        .boast-content .likearea img {
+            width: 25px;
+            margin: 10px 10px 0;
+        }
+        .boast-content .likearea P {
+            margin-left: 10px;
+        }
+        .boast-content .likearea .bright {
+            position: absolute;
+            top:10px;
+            right:10px;
+            font-weight: bold;
+        }
+        .boast-comment {
+            padding-top: 30px;
+            width: 385px;
+            height: 265px;
+            border-bottom: solid 1px #ccc;
+        }
+        .commentwrap {
+            height: 30px;
+        }
+
+        .boast-comment .commentwrap .boast-img {
+            width: 40px;
+            height: 30px;
+            float: left;
+        }
+        .boast-comment .commentwrap .boast-id {
+            float: left;
+            padding: 5px;
+            font-weight: bold;
+        }
+        .boast-comment .commentwrap .boast-dat {
+            float: left;
+            padding: 5px;
+
+        }
+
+        .boasr-commentadd button{ 
+            display: inline-block;
+            padding: 6px 15px;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 3px;
+            background: #996633;
+            outline: 0;
+            border: 0;
+            color: #fff;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .boasr-commentadd .boasr-comadd {
+            float: left;
+        }
+
+        .boasr-commentadd input {
+            width: 300px;
+            height: 30px;
+            padding: 3px;
+            margin: 15px 5px;
+        }
+        
+        
+        /*======= QnA 페이지 =======*/
+
+        .QNA h2{
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 100px;
+        }
+
+        .FAQ h3, .personal h3{
+            padding-top: 20px;
+            padding-bottom: 40px;
+            font-size: 25px;
+        }
+
+        .personal-txt .personal-area, #qnaTitle {
+            width: 1140px;
+            padding: 10px;
+        }
+
+
+
+        #counsel{
+            padding: 5px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        
+        /* buylist*/
+        .buylist-wrap {
+            width: 80%;
+            margin: 150px auto 0;
+            border-bottom: 1px gray solid;
+            padding-bottom: 70px;
+            box-sizing: border-box;
+        }
+
+        .buylist-title {
+            text-align: center;
+            display: inline-block;
+            margin-left: 50px;
+          
+        }
+
+        .buylist-title h2 {
+            font-size: 32px;
+            float: left;
+            height: 60px;
+            line-height: 70px;
+            padding-right: 5px;
+
+        }
+
+        .buylist-title img {
+            width: 50px;
+            text-align: center;
+            float: left;
+            display: block;
+            height: 60px;
+
+        }
+
+        .buylist-wrap1 {
+            width: 80%;
+            margin:20px auto 0 ;
+            border-bottom: 1px gray solid;
+            padding-bottom: 20px;
+            box-sizing: border-box;
+        }
+       
+      .buylist-main1 h2 {
+          font-size: 17px;
+          line-height: 30px;
+          margin-left: 50px;
+      }
+
+        .buylist-list1 h5 {
+            font-size: 17px;
+            line-height: 30px;
+       
+        }
+
+        .buylist-list1 h6 {
+            font-size: 17px;
+            line-height: 30px;
+           
+        }
+
+     
+       
+
+        .buylist-main2 img {
+            margin: 20px auto 0;
+            width: 200px;
+            float: left;
+        }
+
+        .buylist-main2 h2 {
+            font-size: 17px;
+            float: left;
+            margin-top: 110px;
+            padding: 0 80px;
+        }
+
+        .buylist-button {
+            float: right;
+        }
+
+        .buylist-btn{
+            width: 120px;
+            margin-top: 180px;
+            height: 60px;
+        }
+        .buylist1-1{
+            width: 170px;
+            float: left;
+            padding-left: 40px;
+            text-align: center;
+        }
+        .buylist-list1 h6{
+            float: left;
+            margin-left: 300px;
+        }
+        
+        /* idFind */
+        .idFind{
+            width: 60%;
+            margin: 0 auto 70px;
+        }
+        .idFind-title {
+            text-align: center;
+           
+        }
+
+        .idFind-title h2 {
+            font-size: 35px;
+        }
+
+        .idFind-logo {
+            margin: 20px 0;
+        }
+
+        .idFind-logo img {
+            width: 35px;
+            height: 35px;
+        }
+
+        .idFindform {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .idFindform h5 {
+            padding: 20px 5px 10px;
+            font-size: 16px; 
+        }
+        .idFindform-wrap {
+            width: 50%;
+            height: 30px;
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .idFindform-wrap select {
+            width: 100%;
+            height: 30px;
+            text-align: left;
+        }
+
+        .idFindform-wrap-left {
+            width: 50%;
+            float: left;
+            padding: 0 0 0 10px;
+        }
+
+        .idFindform-wrap-right {
+            width: 50%;
+            float: left;
+            padding: 0 0 0 10px;
+        }
+
+        .idFindform input[type="text"] {
+            width: 100%;
+            height: 30px;
+            padding-left: 5px;
+        }
+
+      
+        .idFindBtn1, .idFindBtn2 {
+            background: #996633;
+            border: none;
+            color: white;
+            font-size: 18px;
+        }
+        
+        .idFind-bottom{
+            margin-top: 30px;
+            box-sizing: border-box;
+            width: 100%;
+            
+        }
+        .idFind-bottom div{
+            width: 50%;
+            float: left;
+               
+        }
+        .idFind-bottom1{
+            padding: 0 5px 0 0;
+        }
+        .idFind-bottom2{
+            padding: 0 0 0 5px;
+        }
+        .idFind-bottom .idFindBtn1, .idFind-bottom .idFindBtn2{
+            width: 100%;
+            height: 40px;
+        }
+        
+        /*============ 마이페이지- 내가 쓴 글, 내가 쓴 뽐내기 ==============*/
+        .myBoast #boast-products {
+            text-align: center;
+            /* margin-top: 100px; */
+            padding-bottom: 80px;
+        }
+        .myBoast #boast-products h2 {
+            padding-bottom: 70px;
+            font-size: 35px;
+            color: #996633;
+        }
+
+        .myBoast #boast-products li {
+            display: inline-block;
+            width: 300px;
+            height: 350px;
+            margin: 20px 10px;
+            position: relative;
+        }
+        .myBoast #boast-products li .hover{
+            display: none;
+            position: absolute;
+            top:0px;
+            left: 25px;
+            height: 250px;
+            width: 250px;
+            background-color: rgba(153, 102, 51, 0.6);
+        }
+        
+        .myBoast #boast-products li .boastimg {
+            height: 250px;
+            width: 250px;
+            aspect-ratio: auto 1 / 1;
+        }
+
+        .myBoast #boast-products li .p-title {
+            padding-top: 10px;
+            font-size: 18px;
+            width: 250px;
+            height: 50px;
+            
+        }
+        .myBoast #boast-products li .p-price {
+            font-size: 15px;
+            font-weight: bold;
+            color: #636363;
+            width: 250px;
+            height: 20px;
+            margin-top: 5px;
+        }
+
+        .myBoast .boast-paging {
+            padding-top: 60px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+
+        
+
+        /*============내가 쓴 글 영역===============*/
+
+        .myArticle{
+            margin: 0 auto;
+            width: 1100px;
+        }
+
+        .myArticle button {
+            padding: 3px;
+        }
+        .myBoard h2{
+            text-align: center;
+            font-size: 35px;
+            color: #996633;
+            padding-bottom: 70px;
+        }
+
+        .myBoard table, .myBoard td, .myBoard th{
+            border: 1px solid black;
+            border-collapse : collapse;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .myBoard th{
+            background-color: #ffc17e;
+        }
+
+        .myBoard td, .myBoard th{
+            height: 40px;
+        }
+
+        .myBoard table{
+            /* text-align: center; */
+            width: 900px;
+            margin-bottom: 80px;
+        }
+        
+
+        .myBoard .pagination{
+            text-align: center;
+            /* padding-bottom: 50px ; */
+            /* margin-bottom: 30px; */
+        }
+        
+        /* myinformodify1 */
+        .myInfoModify1{
+            width: 50%;
+            margin: 0 auto;
+        }
+         .myinfomodify-title {
+            text-align: center;
+           
+        }
+
+        .myinfomodify-title h2 {
+            font-size: 35px;
+        }
+
+        .myinfomodify-logo {
+            margin: 20px 0;
+        }
+
+        .myinfomodify-logo img {
+            width: 35px;
+            height: 35px;
+        }
+        .myInfoModify1-passwordOk{
+            margin: 20px auto;
+            width: 70%;
+            text-align: center;
+
+        }
+        
+        .myInfoModify1-password{
+            width: 400px;
+            height: 35px;
+            padding-left: 10px;
+            font-size: 15px;
+        }
+        .myInfoModify1-ok{
+            margin-top: 10px;
+            width: 400px;
+            height: 35px;
+            background: #996633;
+            border: none;
+            color: white;
+            font-size: 16px;
+        }
+        
+        /* myinfomodify2 */
+        
+        .myInfoModify{
+            width: 60%;
+            margin: 0 auto 70px;
+        }
+        .myinfomodify-title {
+            text-align: center;
+           
+        }
+
+        .myinfomodify-title h2 {
+            font-size: 35px;
+        }
+
+        .myinfomodify-logo {
+            margin: 20px 0;
+        }
+
+        .myinfomodify-logo img {
+            width: 35px;
+            height: 35px;
+        }
+        
+       
+        .myinfomodifyform {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .myinfomodifyform h5 {
+            padding: 20px 5px 10px;
+            font-size: 16px; 
+        }
+
+        .myinfomodifyform input[type="text"],
+        .myinfomodifyform input[type="password"] {
+            width: 100%;
+            height: 30px;
+            padding-left: 5px;
+        }
+
+       
+        .myinfomodifyform-phone #phone {
+            width: 75%;
+        }
+
+        .myinfomodifyform-phone button {
+            width: 25%;
+            height: 30px;
+            float: right;
+            background: #996633;
+            border: none;
+            color: white;
+        }
+
+        .myinfomodifyform-phone #phone_check {
+            display: inline-block;
+            margin-top: 8px;
+            width: 75%;
+        }
+
+        .myinfomodifyform-phone button[class="check"] {
+            margin-top: 8px;
+        }
+
+
+        .myinfomodifyform #addNum {
+            width: 50%;
+        }
+
+        .myinfomodifyform-address button {
+            width: 100px;
+            height: 30px;
+            background: #996633;
+            border: none;
+            color: white;
+            padding-bottom: 3px;
+            
+        }
+        .myinfomodifyform input[id="address"]{
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        .myinfomodifyBtn1, .myinfomodifyBtn2 {
+            background: #996633;
+            border: none;
+            color: white;
+            font-size: 18px;
+        }
+        
+        .myinfomodify-bottom{
+            margin-top: 30px;
+            box-sizing: border-box;
+            width: 100%;
+            
+        }
+        .myinfomodify-bottom div{
+            width: 50%;
+            float: left;
+               
+        }
+        .myinfomodify-bottom1{
+            padding: 0 5px 0 0;
+        }
+        .myinfomodify-bottom2{
+            padding: 0 0 0 5px;
+        }
+        .myinfomodify-bottom .myinfomodifyBtn1, .myinfomodify-bottom .myinfomodifyBtn2{
+            width: 100%;
+            height: 40px;
+        }
+        
+        /* passwordChange*/
+        .pwChange{
+            width: 60%;
+            margin: 0 auto 70px;
+        }
+        .pwChange-title {
+            text-align: center;
+           
+        }
+
+        .pwChange-title h2 {
+            font-size: 35px;
+        }
+
+        .pwChange-logo {
+            margin: 20px 0;
+        }
+
+        .pwChange-logo img {
+            width: 35px;
+            height: 35px;
+        }
+
+        .pwChangeform {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .pwChangeform h5 {
+            padding: 20px 5px 10px;
+            font-size: 16px; 
+        }
+     
+        .pwChangeform input[type="password"] {
+            width: 100%;
+            height: 30px;
+            padding-left: 5px;
+        }
+
+      
+        .pwChangeBtn1, .pwChangeBtn2 {
+            background: #996633;
+            border: none;
+            color: white;
+            font-size: 18px;
+        }
+        
+        .pwChange-bottom{
+            margin-top: 30px;
+            box-sizing: border-box;
+            width: 100%;
+            
+        }
+        .pwChange-bottom div{
+            width: 50%;
+            float: left;
+               
+        }
+        .pwChange-bottom1{
+            padding: 0 5px 0 0;
+        }
+        .pwChange-bottom2{
+            padding: 0 0 0 5px;
+        }
+        .pwChange-bottom .pwChangeBtn1, .pwChange-bottom .pwChangeBtn2{
+            width: 100%;
+            height: 40px;
+        }
+        
+        /* pwFind */
+        .pwFind{
+            width: 60%;
+            margin: 0 auto 70px;
+        }
+        .pwFind-title {
+            text-align: center;
+           
+        }
+
+        .pwFind-title h2 {
+            font-size: 35px;
+        }
+
+        .pwFind-logo {
+            margin: 20px 0;
+        }
+
+        .pwFind-logo img {
+            width: 35px;
+            height: 35px;
+        }
+
+        .pwFindform {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .pwFindform h5 {
+            padding: 20px 5px 10px;
+            font-size: 16px; 
+        }
+       
+
+        .pwFindform input[type="text"] {
+            width: 100%;
+            height: 30px;
+            padding-left: 5px;
+        }
+
+      
+        .pwFindBtn1, .pwFindBtn2 {
+            background: #996633;
+            border: none;
+            color: white;
+            font-size: 18px;
+        }
+        
+        .pwFind-bottom{
+            margin-top: 30px;
+            box-sizing: border-box;
+            width: 100%;
+            
+        }
+        .pwFind-bottom div{
+            width: 50%;
+            float: left;
+               
+        }
+        .pwFind-bottom1{
+            padding: 0 5px 0 0;
+        }
+        .pwFind-bottom2{
+            padding: 0 0 0 5px;
+        }
+        .pwFind-bottom .pwFindBtn1, .pwFind-bottom .pwFindBtn2{
+            width: 100%;
+            height: 40px;
+        }
+        /* reserveList */
+        .myReserve table, .myReserve td, .myReserve th{
+            border: 1px solid black;
+            border-collapse : collapse;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .myReserve th{
+            background-color: lightgray;
+        }
+
+        .myReserve td, .myReserve th{
+            height: 40px;
+        }
+
+        .myReserve table{
+            margin-top: 25px;
+            width: 700px;
+            margin-bottom: 30px;
+        }
+
+        .reserveList .pagination{
+            text-align: center;
+            padding-bottom: 50px ;
+            margin-bottom: 30px;
+        }
+        /* withdraw*/
+        .withdraw{
+            width: 60%;
+            margin: 0 auto 70px;
+        }
+        .withdraw-title {
+            text-align: center;
+           
+        }
+
+        .withdraw-title h2 {
+            font-size: 35px;
+        }
+
+        .withdraw-logo {
+            margin: 20px 0;
+        }
+
+        .withdraw-logo img {
+            width: 35px;
+            height: 35px;
+        }
+
+        .withdrawform {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .withdrawform h5 {
+            padding: 20px 5px 20px;
+            font-size: 16px; 
+        }
+        .withdrawform-wrap {
+            width: 50%;
+            height: 30px;
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .withdrawform-wrap select {
+            width: 100%;
+            height: 30px;
+            text-align: left;
+        }
+
+        .withdrawform-wrap-left {
+            width: 50%;
+            float: left;
+            padding: 0 0 0 10px;
+        }
+
+        .withdrawform-wrap-right {
+            width: 50%;
+            float: left;
+            padding: 0 0 0 10px;
+        }
+
+        .withdrawform input[type="text"] {
+            width: 100%;
+            height: 30px;
+            padding-left: 5px;
+        }
+
+      
+        .withdrawBtn1, .withdrawBtn2 {
+            background: #996633;
+            border: none;
+            color: white;
+            font-size: 18px;
+        }
+        
+        .withdraw-bottom{
+            margin-top: 30px;
+            box-sizing: border-box;
+            width: 100%;
+            
+        }
+        /* .withdraw-bottom div{
+            width: 50%;
+            float: left;
+               
+        } */
+        .withdraw-bottom1{
+            padding: 0 5px 0 0;
+        }
+        
+        .withdraw-bottom .withdrawBtn1, .withdraw-bottom .withdrawBtn2{
+            width: 100%;
+            height: 40px;
+        }
+
+        .withdrawform .reason-list label{
+            font-size: 14.5px;
+        }
+
+        .withdrawform .reason-list label input[type="radio"]{
+            margin-bottom: 10px;
+            
+        }
+        
+        /*zzim*/
+        .zzimList{
+            width: 896px;
+            margin: 0 auto;
+        }
+        .myZzim h3 {
+            text-align: center;
+            padding-top: 5em;
+            padding-bottom: 170px;
+            font-size: 25px;
+            height: 200px;
+        }
+
+        .myZzim #left img {
+            float: left;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 40px;
+            margin-right: 40px;
+            width: 150px;
+            height: 150px;
+        }
+
+        .myZzim #delBtn {
+            width: 30px;
+            height: 30px;
+        }
+
+        .myZzim table, .myZzim td, .myZzim th{
+            border: 1px solid black;
+            border-collapse : collapse;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .myZzim th{
+            background-color: lightgray;
+        }
+
+        .myZzim td, .myZzim th{
+            height: 40px;
+        }
+
+        .myZzim table{
+            width: 700px;
+            margin-bottom: 30px;
+        }
+
+        .pagination{
+            text-align: center;
+            padding-bottom: 50px ;
+            margin-bottom: 30px;
+        }
+
+        .myZzim td, .myZzim th {
+            border-left: none;
+            border-right: none;
+        }
+
+        .zzimList .myZzim table {
+            width: 896px;
+
+        }
+
+        .myZzim p {
+            text-align: left;
+
+        }
+
+        .myZzim span {
+            padding-bottom: 20px;
+            line-height: 24px;
+        }
+
+        .myZzim #left {
+            width: 30%;
+        }
+
+        .myZzim #right {
+            padding-left: 20px;
+        }
+        
+        .zzim-left, .zzim-right{
+            width: 50%;
+            float: left;
+        }
+        .zzim-left{
+            padding-left: 30px;
+        }
+        .zzim-right{
+            padding-right: 77px;
+        }
+        .zzim-right p{
+            text-align: right;
+        }
+        .zzim-info{
+            margin-bottom: 10px;
+        }
+
+        .zzimList #paging{
+            text-align: center;
+        }
+
+        .zzimList #paging a{
+            margin: 0 2px;
+        }
+        /* basket */
+        .basket-wrap {
+            width: 80%;
+            margin: 0 auto;
+            border-bottom: 1px gray solid;
+            padding-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .basket-title {
+            text-align: center;
+            display: inline-block;
+            font-size: 23px;
+            position: relative;
+        }
+
+        .basket-title img {
+            width: 55px;
+            position: absolute;
+            bottom: -10px;
+            right: -60px;
+            z-index: -1;
+        }
+
+        .basket-wrap1 {
+            width: 80%;
+            margin: 50px auto;
+        }
+
+        .basket-table {          
+            width: 100%;
+        }
+
+        .basket-table .first {
+            text-align: center;
+            width: 2%;
+        }
+        .basket-table img{
+            height: 150px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 40px;
+            margin-right: 40px;
+            float: left;
+            
+        }
+        .basket-table p{
+            float: left;
+            /* margin-top: 30px; */
+            margin-left: 40px;
+ 
+        }
+        .basket-table th{
+            height: 30px;
+        }
+     
+        .basket-cntBtn{
+            width: 80px;
+            height: 20px;
+            margin: 0 auto;
+        }
+        .basket-cntBtn div{
+            float: left;
+            text-align: center;
+        }
+        
+        .basket-cntBtn1, .basket-cntBtn3{
+            border: 1px solid black;
+            width: 20px;
+        }
+        .basket-cntBtn2{
+            width: 40px;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .basket-delbutton {
+            display: block;
+            margin: auto;
+        }
+
+        
+
+        .basket-wrap2 {
+            width:  620px;
+            height: 60px;
+            margin: auto auto;
+            
+        }
+
+
+        .basket-title1{
+            text-align: center;
+            margin: 0 auto;
+        }
+        .basket-title1 h2 {
+            width: 180px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .basket-title1 h2.sign{
+            padding-top: 15px;
+            width: 36px;
+        }
+
+        .basket-title1 h3{
+            width: 180px;
+            text-align: center;
+        }
+
+        .basket-title1 img{
+            width: 36px; height: 36px;
+        }
+
+        .basket-button{
+            /* background-color: cyan; */
+            width: 340px;
+            height: auto;
+            margin: auto;
+        }
+        .basket-button .btn1{ 
+            width: 150px;
+            height: 52px;
+            width: 40%;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .basket-button .btn2{ 
+            width: 150px;
+            height: 52px;
+            width: 40%;
+            float: left;
+            
+        }
+
+        .select-box{
+            padding: 5px;
+            margin: 15px 0;
+        }
+
+        .select-box button{
+            width: 110px;
+            height: 34px;
+        }
+
+        .basket-wrap1 input[type="checkbox"]{
+            margin: 10px;
+        }
+
+        .basket-table tr p{
+            height: 100%;
+            padding: 70px 0;
+            /* top: 50%; */
+            margin-left: 30px;
+            
+        }
+        
+        /* detail */
+        .detail-wrap{
+            width: 60%;
+            margin: 150px auto 0;
+            box-sizing: border-box;
+        }
+        .detail-img{
+            width: 50%;
+            text-align: center;
+            padding: 5% 5% 5% 5%;
+            float: left;
+        }
+        .detail-img img{
+            width: 100%;
+            height: 100%;
+        }
+        .detail-explan{
+            width: 50%;
+            float: left;
+            padding: 5% 5% 5% 5%;
+        }
+        .detail-explan>div>.right-sort{
+            margin-top: 15px;
+            text-align: right;
+        }
+        .detail-explan-item{
+            padding-top: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid black ;
+        }
+        .detail-explan-item3{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid black ;
+            margin-top: 30px;
+        }
+        
+        .detail-explan-item select{
+            width: 100%;
+            height: 40px;
+        }
+        .detail-explan-cnt{
+            width: 50%;
+            float: left;
+            padding: 5% 5% 5% 5%;
+        }
+        .detail-cntBtn{
+            margin-top: 10px;
+        }
+        .detail-cntBtn div{
+            float: left;
+            text-align: center;
+        }
+        
+        .detail-cntBtn1, .detail-cntBtn3{
+            border: 1px solid black;
+            width: 20px;
+        }
+        .detail-cntBtn2{
+            width: 40px;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .detail-total{
+            width: 50%;
+            float: left;
+            text-align: right;
+            padding: 5% 5% 5% 5%;
+        }
+        .detail-total h4{
+            margin-top: 10px;
+        }
+        .detail-explan-item4{
+
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+            box-sizing: border-box;
+
+        }
+        .detail-explan-item4>div{
+            float: left;
+            width: 50%;
+            padding: 5px;
+        }
+        .detail-explan-item4 button{
+            width: 100%;
+            height: 35px;
+        }
+        .detail-btn1{
+            background-color: white;
+            border: 1px solid crimson;
+            color: crimson;
+            
+        }
+        .detail-btn2{
+            background-color: crimson;
+            color: white;
+            border: none;
+        }
+        .detail-info{
+            width: 60%;
+            margin: 0 auto;
+        }
+        
+        .detail-menu >button{
+            width: 25%;
+            float: left;
+            height: 50px;
+        }
+        .detail-product{
+            margin: 50px auto;
+        }
+        .detail-product img{
+            width: 100%;
+            height: 400px;
+        }
+        /*=============== 시작! ===================*/
+
+
+
+        
+        .reviews table, .qna table, .refund table {
+            
+            border-top: 1px solid gray;
+            border-collapse: collapse;
+            margin: 0 auto;
+            
+            width: 1000px;
+            margin-bottom: 50px;
+
+        }
+        .reviews table th,  .reviews table td, .qna th, .qna td{      
+            text-align: center;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid gray;
+            padding: 10px;
+        }
+
+       
+
+        .refund th, .refund td{
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid gray;
+            padding: 10px;
+        }
+
+        .reviews .review-title{
+            text-align: left;
+        }
+
+        .qna .qna-title {
+            text-align: left;
+            padding-left: 30px;
+            width: 500px;
+        }
+
+        .qna-area{
+            margin: 0 auto;
+            width: 1000px;
+        }
+        /*<상품문의> 버튼*/
+        .qna .p-qna { 
+            /* position: absolute; */
+            display: block;
+            
+            float: right;
+            text-align: center;
+            padding: 5px;
+            margin: 0 auto;
+            
+            margin-top: -45px;
+
+            
+            
+        }
+
+        .refund .refund-title{
+            width: 200px;
+            text-align: center;
+            background-color: #fafafa;
+        }
+        .refund .refund-content{
+            font-size: 13.5px;
+            line-height: 1.5em;
+            padding-left: 100px;
+        }
+
+        .qna table button{
+            padding: 3px;
+        }
+        .reviews .label,  .refund .label {
+            /* text-align: center; */
+            padding-top: 70px;
+            margin: 0 auto;
+            width: 1200px;
+            /* border-top: 1px solid gray; */
+        }
+
+        .qna .label{
+            padding-top: 70px;
+            margin: 0 auto;
+            width: 1200px;
+            /* border-top: 1px solid gray; */
+        }
+
+        .reviews h3, .refund h3{
+            text-align: center;
+            margin-bottom: 70px;
+            /* margin: 0 auto; */
+        }
+
+        .qna h3{
+            text-align: center;
+            margin-bottom: 130px;
+        }
+
+
+        .refund ul{
+            padding: 30px 0;
+        }
+        
+        /* orderpage*/
+        .orderPage-table {
+            /*전체 테이블*/
+            width: 70%;
+            margin: auto;
+            margin-top: 3em;
+            line-height: 1.5em;
+        }
+
+        .order-title {
+            /*맨 위에 제목 주문하기 부분*/
+            text-align: center;
+            font-size: 23px;
+            position: relative;
+        }
+
+        .orderPage-name {
+            /*첫번째칸 부분*/
+            width: 80%;
+            padding: 0.5em;
+            display: inline-block;
+            text-align: left;
+        }
+
+        .orderPage-info{
+            /*주소, 핸드폰번호, 요청사항*/
+            padding: 1em;
+        }
+
+        .orderPage-productTitle {
+            /*주문 상품*/
+            padding: 0.5em;
+        }
+
+        .orderPage-product1 {
+            /*상품 사진*/
+            width: 30%;
+            padding: 2em;
+        }
+
+        #orderPage-product {
+            /*상품 내용*/
+            display: inline-block;
+            vertical-align: middle;
+            text-align: left;
+        }
+
+        .orderPage-product2 {
+            /*주문상품 내용*/
+            width: 40em;
+            padding-left: 2em;
+        }
+
+        .orderPage-product2-price {
+            /*주문상품 가격*/
+            text-align: right;
+        }
+
+        .orderPage-product h2 {
+            /*주문상품의 총금액(19,000원)*/
+            width: 10em;
+            text-align: right;
+            padding-right: 2em;
+        }
+
+        .orderPage-account {
+            /*결제 금액*/
+            padding: 0.5em;
+        }
+
+        .orderPage-price {
+            /*상품 금액*/
+            display: inline-block;
+            padding-left: 5em;
+        }
+
+        #orderPage-money{
+            padding-left: 750px;
+        }
+
+        #orderPage-money2{
+            padding-left: 775px;
+        }
+
+        #orderPage-money3{
+            padding-left: 732px;
+        }
+
+        .orderPage-price2 {
+            /*배송비*/
+            display: inline-block;
+            padding-left: 5em;
+        }
+
+        .orderPage-allaccount {
+            /*총 결제금액*/
+            padding-left: 5em;
+            display: inline-block;
+            padding-bottom: 1em;
+        }
+
+        .orderPage-payButton {
+            /*결제수단 버튼*/
+            width: 10em;
+            padding: 0.2em;
+            margin: 1em;
+        }
+
+        .orderPage-payButtonAll {
+            /*결제수단버튼 세개 가운데 정렬*/
+            text-align: center;
+        }
+
+        .orderPage-finalButton {
+            /*결제하기 버튼*/
+            margin: 2em;
+            text-align: center;
+        }
+
+        .orderPage-finalButton1,
+        .orderPage-finalButton2 {
+            /*결제, 취소 버튼*/
+            width: 20em;
+            padding: 0.3em;
+            font-size: 17px;
+        }
+        
+        /*joinModal*/
+        .modal-wrap {
+            /*display: none;*/
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .modal {
+            /*display: none;*/
+            width: 500px;
+            height: 800px;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            margin: -250px 0 0 -250px;
+            background: rgb(255, 254, 254);
+            z-index: 2;
+
+        }
+
+        .modal_close {
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .join-title {
+            text-align: center;
+            padding: 40px 0 20px;
+        }
+
+        .join-title h2 {
+            font-size: 30px;
+        }
+
+        .join-logo {
+            margin: 5px 0;
+        }
+
+        .join-logo img {
+            width: 35px;
+            height: 35px;
+        }
+
+        .joinform {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .joinform h5 {
+            padding: 8px 5px;
+        }
+
+        .joinform input[type="text"],
+        .joinform input[type="password"] {
+            width: 100%;
+            height: 25px;
+            padding-left: 5px;
+        }
+
+        .joinform-wrap {
+            width: 50%;
+            height: 25px;
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .joinform-wrap select {
+            width: 100%;
+            height: 25px;
+            text-align: left;
+        }
+
+        .joinform-wrap-left {
+            width: 50%;
+            float: left;
+            padding: 0 0 0 10px;
+        }
+
+        .joinform-wrap-right {
+            width: 50%;
+            float: left;
+            padding: 0 0 0 10px;
+        }
+
+        .joinform-phone #phone {
+            width: 75%;
+        }
+
+        .joinform-phone button {
+            width: 25%;
+            height: 25px;
+            float: right;
+            background: #996633;
+            border: none;
+            color: white;
+        }
+
+        .joinform-phone #phone_check {
+            display: inline-block;
+            margin-top: 8px;
+            width: 75%;
+        }
+
+        .joinform-phone button[class="check"] {
+            margin-top: 8px;
+        }
+
+
+        .joinform #addNum {
+            width: 50%;
+        }
+
+        .joinform-address button {
+            width: 25%;
+            height: 25px;
+            background: #996633;
+            border: none;
+            color: white;
+            padding-bottom: 2px;
+            
+        }
+        .joinform input[id="address"]{
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        .joinBtn{
+            width: 100%;
+            height: 40px;
+            margin-top: 20px;
+            background: #996633;
+            border: none;
+            color: white;
+            font-size: 18px;
+        }
+        
+        /*loginModal*/
+        .modal-wrap {
+            /*display: none;*/
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .modal {
+            /*display: none;*/
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -250px 0 0 -250px;
+            background: rgb(255, 254, 254);
+            z-index: 2;
+
+        }
+
+        .modal_close {
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .modal h2 {
+            text-align: center;
+            padding: 50px;
+            margin-bottom: 25px;
+            font-size: 26px;
+        }
+
+        .loginform-wrap {
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .loginform-wrap input[type="text"],
+        .loginform-wrap input[type="password"] {
+            width: 100%;
+            height: 40px;
+            font-size: 16px;
+            padding-left: 5px;
+
+        }
+
+        .logininput-wrap {
+            margin-bottom: 10px;
+        }
+
+        .login-checkbox {
+            width: 50%;
+            float: left;
+            text-align: left;
+            padding-left: 5px;
+        }
+
+        .logininput-wrap-btn {
+            margin-top: 20px;
+        }
+
+        .logininput-wrap button {
+            width: 100%;
+            height: 40px;
+            font-size: 16px;
+        }
+
+        .login-btn {
+            background-color: #996633;
+            color: white;
+            border: none;
+        }
+
+        .naver-btn {
+            border: none;
+            background-color: rgb(65, 185, 65);
+            color: white;
+        }
+
+        .kakao-btn {
+            border: none;
+            background-color: rgb(252, 248, 52);
+            color: black;
+        }
+
+        .login-modal-bottom {
+            margin-top: 25px;
+        }
+
+        .modal-bottom {
+            width: 33%;
+            float: left;
+        }
+
+        .modal-bottom a {
+            color: black;
+        }
+        
+        
