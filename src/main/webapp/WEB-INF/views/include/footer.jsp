@@ -1,6 +1,54 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<style>
+ /* 푸터 */
+        footer {
+            background-color: #5c5c5c;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .footer-container {
+            text-align: left;
+            color: white;
+            padding: 20px 50px;
+            display: inline-block;
+        }
+        .footer-logo {
+            margin: 50px 30px 0px;
+            width: 120px;
+            float: left;
+        }
 
+        .address {
+            float: left;
+            padding: 30px;
+            margin-left: 60px;
+        }
+        .about {
+            padding: 30px;
+            float: left;
+            margin-left: 50px;
+        }
+        .f-title {
+            padding-bottom: 15px;
+            color: rgb(161, 160, 160);
+            font-size: 14px;
+        }
+        .explain {
+            font-size: 12px;
+        }
+        #copyrights {
+            width: 100%;
+            text-align: center;
+            background: #000;
+            padding: 20px 0;
+            color: #fff;
+            font-size: 12px;
+        }
+        .f-size {
+            font-size: 16px;
+        }
+</style>
 
 <footer>
         

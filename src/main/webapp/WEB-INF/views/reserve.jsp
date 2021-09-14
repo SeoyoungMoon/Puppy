@@ -2,7 +2,8 @@
     pageEncoding="UTF-8"%>
     
     <%@ include file="./include/header.jsp" %>
-
+	
+	
 
 
     <section>
@@ -13,7 +14,7 @@
             </div>
         </article>
         <article class="main-container">
-            <div class="wrap mainBody">
+            <div class="wrap mainBody clearfix">
                 <div class="left">
                     <ul>
                         <li class="noti-info clearfix">
@@ -83,11 +84,11 @@
                         </div>
                         <label for="">체크인</label>
                         <div class="reserve_input">
-                            <input type="text" id="" name="checkIn">
+                            <input type="text" id="datepicker1" name="checkIn">
                         </div>
                         <label for="">체크아웃</label>
                         <div class="reserve_input">
-                            <input type="text" id="" name="checkOut">
+                            <input type="text" id="datepicker2" name="checkOut">
                         </div>
                         <label for="">반려견종</label>
                         <div class="reserve_input">
@@ -113,3 +114,47 @@
     </section>
 
 <%@ include file="./include/footer.jsp" %>
+
+<script>
+
+$.datepicker.setDefaults({
+    dateFormat: 'yy-mm-dd',
+    prevText: '이전 달',
+    nextText: '다음 달',
+    monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+    monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+    dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+    dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+    dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+    showMonthAfterYear: true,
+    yearSuffix: '년'
+});
+
+$(function() {
+    $("#datepicker1").datepicker({
+    	minDate : +1
+    });
+    
+    $("#datepicker2").datepicker({
+    	minDate :+1
+    });
+    
+    $("#datepicker2").on("propertychange change keyup paste input", function(){
+	    let checkIn = $("#datepicker1").val();
+	    console.log(checkIn);
+	    let checkOut = $("#datepicker2").val();
+	    console.log(checkOut);
+	    
+	    checkIn = checkIn.replace(/-/gi, "");
+	    checkOut = checkOut.replace(/-/gi, "");
+	    console.log('변환 후:' + checkIn);
+	    console.log('변환 후:' + checkOut);
+	    if(Number(checkIn) > Number(checkOut)){
+	    	alert("체크인보다 체크아웃이 빠를순 없습니다.");
+	    	$("#datepicker2").val('');
+	    } 	
+    });
+});
+
+</script>
+

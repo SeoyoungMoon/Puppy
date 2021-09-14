@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!DOCTYPE html>
 <html lang="ko">
@@ -9,6 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>main</title>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="<c:url value='/css/style.css'/>">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <style>
 
         /* 디자인 시작 시 기본적으로 선언하는 문법 */
@@ -55,10 +60,10 @@
         .header_top a:hover { color:#000; }
         .header_top_area { position:relative; width:70%; margin:0 auto; text-align:center; }
 
-        .header_top_area .right { position:absolute; right:0; top: 10px; }
-        .header_top_area .right a { display:inline-block; padding:0px 10px; }
-        .header_top_area .left { position:absolute; left:0; top: 10px;}
-        .header_top_area .left a { display: inline-block; width: 25px; margin-right: 3px;}
+        .header_top_area .hright { position:absolute; right:0; top: 10px; }
+        .header_top_area .hright a { display:inline-block; padding:0px 10px; }
+        .header_top_area .hleft { position:absolute; left:0; top: 10px;}
+        .header_top_area .hleft a { display: inline-block; width: 25px; margin-right: 3px;}
 
         .logo{width: 350px; margin:0 auto; padding:20px 0 40px; text-align:center; }
         .menu_area {  position:relative; width:1080px; margin: 0 auto; }
@@ -189,104 +194,57 @@
         }
         
         
-        /* 푸터 */
-        footer {
-            background-color: #5c5c5c;
-            text-align: center;
-            margin-top: 100px;
-        }
-        .footer-container {
-            text-align: left;
-            color: white;
-            padding: 20px 50px;
-            display: inline-block;
-        }
-        .footer-logo {
-            margin: 50px 30px 0px;
-            width: 120px;
-            float: left;
-        }
-
-        .address {
-            float: left;
-            padding: 30px;
-            margin-left: 60px;
-        }
-        .about {
-            padding: 30px;
-            float: left;
-            margin-left: 50px;
-        }
-        .f-title {
-            padding-bottom: 15px;
-            color: rgb(161, 160, 160);
-            font-size: 14px;
-        }
-        .explain {
-            font-size: 12px;
-        }
-        #copyrights {
-            width: 100%;
-            text-align: center;
-            background: #000;
-            padding: 20px 0;
-            color: #fff;
-            font-size: 12px;
-        }
-        .f-size {
-            font-size: 16px;
-        }
+       
 
     </style>
 </head>
-<body>
     <!-- 헤더 영역-->
     <header>
         <div class="header clearfix">
             <div class="header_top">
                 <div class="header_top_area">
-                    <div class="right">
+                    <div class="hright">
                         <a href="/join" style="font-weight: normal;">회원가입</a>
                         <a href="/login" style="font-weight: normal;">로그인</a>
                         <a href="/sitemap" style="font-weight: normal;">사이트맵</a>
                     </div>
-                    <div class="left">
-                        <a href="/" class="move"><img src="./img/simbol.png" alt="댕댕이 유치원"></a>
-                        <a href="/" class="move"><img src="./img/facebook.png" alt="페이스북"></a>
-                        <a href="/" class="move"><img src="./img/insta.png" alt="인스타"></a>
-                        <a href="/" class="move"><img src="./img/tube.png" alt="유튜브"></a>
+                    <div class="hleft">
+                        <a href="<c:url value='/puppy'/>" class="move"><img src="<c:url value='/img/simbol.png'/>" alt="댕댕이 유치원"></a>
+                        <a href="/" class="move"><img src="<c:url value='/img/facebook.png'/>" alt="페이스북"></a>
+                        <a href="/" class="move"><img src="<c:url value='/img/insta.png'/>" alt="instar"></a>
+                        <a href="/" class="move"><img src="<c:url value='/img/tube.png'/>" alt="유튜브"></a>
                     </div>
                 </div>
             </div>
             <div class="logo">
-                    <a href="/" target="_blank"><img src="./img/logo.png" alt="댕댕이 유치원"></a>
+                    <a href="<c:url value='/puppy'/>" target="_blank"><img src="<c:url value='/img/logo.png'/>" alt="댕댕이 유치원"></a>
             </div>
             <nav>
                 <div class="menu_area">
                     <ul class="menu">
                         <li class="menu-li">
-                            <a href="/reserve" class="menu-li-a">예약하기</a>
+                            <a href="<c:url value='/reserve'/>" class="menu-li-a">예약하기</a>
                         </li>
                         <li class="menu-li">
-                            <a href="/info" class="menu-li-a">이용안내</a>
+                            <a href="<c:url value='/notice'/>" class="menu-li-a">이용안내</a>
                             <ul class="second">
                                 <li>
-                                    <a href="/info">이용안내</a>
+                                    <a href="<c:url value='/notice'/>">이용안내</a>
                                 </li>
                                 <li>
-                                    <a href="/info/pickup">픽업서비스</a>
+                                    <a href="<c:url value='/pickupService'/>">픽업서비스</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="menu-li">
                             <a href="/service" class="menu-li-a">주요서비스</a>
                             <ul class="second">
-                                <li><a href="/service/dayCare">호텔&데이케어</a></li>
-                                <li><a href="/service/facility">유치원</a></li>
-                                <li><a href="/service/beauty">애견미용</a></li>
-                                <li><a href="/service/studio">스튜디오</a></li>
-                                <li><a href="/service/medical">메디컬센터</a></li>
-                                <li><a href="/service/specialCare">스페셜케어</a></li>
+                                <li><a href="<c:url value='/service/hotel'/>">호텔&데이케어</a></li>
+                                <li><a href="<c:url value='/service/preschool'/>">유치원</a></li>
+                                <li><a href="<c:url value='/service/grooming'/>">애견미용</a></li>
+                                <li><a href="<c:url value='/service/studio'/>">스튜디오</a></li>
+                                <li><a href="<c:url value='/service/medicalCenter'/>">메디컬센터</a></li>
+                                
                             </ul>
                             
                         </li>
@@ -301,13 +259,13 @@
                         <li class="menu-li">
                             <a href="/community" class="menu-li-a">커뮤니티</a>                            
                             <ul class="second">
-                                <li><a href="/community/freeboard">자유게시판</a></li>
+                                <li><a href="board/freeboard">자유게시판</a></li>
                                 <li><a href="/community/showboard">뽐내기게시판</a></li>
                                 <li><a href="/community/showboard">QnA</a></li>
                             </ul>
                         </li>
                         <li class="menu-li">
-                            <a href="/professional" class="menu-li-a">전문진소개</a>
+                            <a href="<c:url value='/professional'/>" class="menu-li-a">전문진소개</a>
                         </li>
                     </ul>
                     
