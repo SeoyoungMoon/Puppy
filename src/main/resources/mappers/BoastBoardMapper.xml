@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper
+	namespace="com.spring.puppy.boastboard.mapper.IBoastBoardMapper">
+	
+	<insert id="boastRegist">
+		INSERT INTO boastboard(bbno, title)
+		VALUES(boastboard_seq.NEXTVAL, #{title})
+	</insert>
+	
+	<select id="getList"
+		resultType="com.spring.puppy.command.BoastBoardVO">
+		SELECT * FROM boastboard
+		ORDER BY bbno DESC
+			
+	</select>
+		
+	
+</mapper>

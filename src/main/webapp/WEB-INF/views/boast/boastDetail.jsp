@@ -43,7 +43,7 @@
                         <input type="text" name="ssn"  placeholder="댓글을 남겨보세요" >
                     </div>
                     <div class="boasr-comadd">
-                        <button>게시</button>
+                        <button >게시</button>
                     </div>
                 </div>
             </div>

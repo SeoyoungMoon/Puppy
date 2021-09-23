@@ -8,7 +8,13 @@ public class ViewController {
 
 	@GetMapping("/reserve")
 	public void reserve() {}
-
+	/*
+	@GetMapping("/reserve")
+	public String reserve() {
+		return "reserve";
+	}
+	 */
+	
 	@GetMapping("/professional")
 	public void professional() {}
 	

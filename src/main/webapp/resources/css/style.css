@@ -1,11 +1,11 @@
-/*======= 웹 폰트 선언 =======*/
+/*======= �쎒 �룿�듃 �꽑�뼵 =======*/
 @import
 	url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap')
 	;
 
-/* 디자인 시작 시 기본적으로 선언하는 문법 */
+/* �뵒�옄�씤 �떆�옉 �떆 湲곕낯�쟻�쑝濡� �꽑�뼵�븯�뒗 臾몃쾿 */
 * {
-	/* 기본 선언: 마진, 패딩 0, 요소 크기를 border를 기준으로.*/
+	/* 湲곕낯 �꽑�뼵: 留덉쭊, �뙣�뵫 0, �슂�냼 �겕湲곕�� border瑜� 湲곗��쑝濡�.*/
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
@@ -18,22 +18,22 @@ body, html {
 }
 
 img {
-	max-width: 100%; /*사이즈가 변해도 넓이를 유지*/
-	height: auto; /* 사이즈가 변해도 비율을 유지 */
+	max-width: 100%; /*�궗�씠利덇� 蹂��빐�룄 �꼻�씠瑜� �쑀吏�*/
+	height: auto; /* �궗�씠利덇� 蹂��빐�룄 鍮꾩쑉�쓣 �쑀吏� */
 }
 
 /*
 input, textarea, button, select {
-     고유하게 적용되어있는 form 관련 요소들을 제거해서
-     여러 브라우저에서 동일한 디자인을 얻게 함.
-    -webkit-appearance: none; 크롬, 사파리
-    -moz-appearance: none; 파이어폭스
+     怨좎쑀�븯寃� �쟻�슜�릺�뼱�엳�뒗 form 愿��젴 �슂�냼�뱾�쓣 �젣嫄고빐�꽌
+     �뿬�윭 釉뚮씪�슦���뿉�꽌 �룞�씪�븳 �뵒�옄�씤�쓣 �뼸寃� �븿.
+    -webkit-appearance: none; �겕濡�, �궗�뙆由�
+    -moz-appearance: none; �뙆�씠�뼱�룺�뒪
     appearance: none; ie, edge
     border: none;
 }
 */
 ul, ol, dl, li {
-	/*리스트 스타일은 사용할 일이 많지 않아요.*/
+	/*由ъ뒪�듃 �뒪���씪�� �궗�슜�븷 �씪�씠 留롮� �븡�븘�슂.*/
 	list-style: none;
 }
 
@@ -45,7 +45,7 @@ a {
 	text-decoration: none;
 }
 
-/* 공통 스타일 */
+/* 怨듯넻 �뒪���씪 */
 .clearfix::after {
 	content: '';
 	display: block;
@@ -72,7 +72,7 @@ table, tr, td, th {
 	border-collapse: collapse;
 }
 
-/* 해더 */
+/* �빐�뜑 */
 .header {
 	position: fixed;
 	height: 290px;
@@ -81,7 +81,7 @@ table, tr, td, th {
 	background: rgba(255, 255, 255, 0.8);
 	border-bottom: 1px solid #c6c6c6;
 	box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
-	z-index: 99999;
+	z-index: 20;
 }
 
 .header_top {
@@ -171,7 +171,7 @@ table, tr, td, th {
 	position: absolute;
 	top: 90%;
 	display: none;
-	z-index: 10000;
+	z-index: 20;
 }
 
 .menu li:hover .second {
@@ -201,7 +201,7 @@ table, tr, td, th {
 	border-bottom: 3px solid #996633;
 }
 
-/* 바디 */
+/* 諛붾뵒 */
 section {
 	margin-top: 290px;
 	width: 100%;
@@ -334,7 +334,7 @@ section {
 	width: 300px;
 }
 
-/* 푸터 */
+/* �뫖�꽣 */
 footer {
 	background-color: #5c5c5c;
 	text-align: center;
@@ -389,7 +389,7 @@ footer {
 	font-size: 16px;
 }
 
-/* 슬라이더 */
+/* �뒳�씪�씠�뜑 */
 #main-wrap {
 	width: 1900px;
 	position: relative;
@@ -489,7 +489,7 @@ footer {
 	background-color: #417dd6;
 }
 
-/*======= 예약안내/이용안내 페이지 =======*/
+/*======= �삁�빟�븞�궡/�씠�슜�븞�궡 �럹�씠吏� =======*/
 .title {
 	padding-top: 120px;
 	line-height: 40px;
@@ -620,7 +620,7 @@ footer {
 	padding: 1em;
 }
 
-/*================ 픽업서비스 ==================*/
+/*================ �뵿�뾽�꽌鍮꾩뒪 ==================*/
 .pick-title {
 	width: 80%;
 	height: 150px;
@@ -663,7 +663,7 @@ footer {
 	padding-left: 5px;
 }
 
-/*======= 서비스 - 그루밍 페이지, 메디컬센터,스튜디오 =======*/
+/*======= �꽌鍮꾩뒪 - 洹몃（諛� �럹�씠吏�, 硫붾뵒而ъ꽱�꽣,�뒪�뒠�뵒�삤 =======*/
 .service-container {
 	margin-top: 2em;
 	display: inline-block;
@@ -671,7 +671,7 @@ footer {
 
 .service-container h3 {
 	margin-bottom: 50px;
-	margin-top: 5em; /*고품격이랑 제목사진 사이 간격*/
+	margin-top: 5em; /*怨좏뭹寃⑹씠�옉 �젣紐⑹궗吏� �궗�씠 媛꾧꺽*/
 }
 
 .main_txt {
@@ -726,7 +726,7 @@ footer {
 	height: 500px;
 }
 
-/*===========서비스 - 호텔 페이지===============*/
+/*===========�꽌鍮꾩뒪 - �샇�뀛 �럹�씠吏�===============*/
 .hena {
 	margin-top: 50px;
 	margin-bottom: 100px;
@@ -799,10 +799,10 @@ footer {
 	line-height: 25px;
 }
 
-/*==============서비스 - 유치원==============*/
+/*==============�꽌鍮꾩뒪 - �쑀移섏썝==============*/
 .educationSystem {
 	padding-top: 2em;
-	margin-top: 15em; /*표랑 고품격 사이의 간격*/
+	margin-top: 15em; /*�몴�옉 怨좏뭹寃� �궗�씠�쓽 媛꾧꺽*/
 }
 
 .educationSystem h3 {
@@ -810,7 +810,7 @@ footer {
 }
 
 .edulist {
-	width: 100%; /*표 오른쪽 너비*/
+	width: 100%; /*�몴 �삤瑜몄そ �꼫鍮�*/
 	background-color: blanchedalmond;
 	text-align: center;
 }
@@ -820,7 +820,7 @@ footer {
 }
 
 .in {
-	margin-top: 10em; /*표랑 국내최고의 시설 사이 간격*/
+	margin-top: 10em; /*�몴�옉 援��궡理쒓퀬�쓽 �떆�꽕 �궗�씠 媛꾧꺽*/
 }
 
 .in div {
@@ -832,7 +832,7 @@ footer {
 }
 
 .pres-price {
-	margin-top: 5em; /*이용가격이랑 국내최고의시설 사이 간격*/
+	margin-top: 5em; /*�씠�슜媛�寃⑹씠�옉 援��궡理쒓퀬�쓽�떆�꽕 �궗�씠 媛꾧꺽*/
 }
 
 .monthPrice {
@@ -845,7 +845,7 @@ footer {
 	background-color: blanchedalmond;
 }
 
-/*======= 전문진 소개 페이지 =======*/
+/*======= �쟾臾몄쭊 �냼媛� �럹�씠吏� =======*/
 .comment {
 	padding-top: 50px;
 	font-size: 25px;
@@ -894,7 +894,7 @@ footer {
 
 ;
 
-/*================사이트 맵====================*/
+/*================�궗�씠�듃 留�====================*/
 .sitemap-title {
 	padding-top: 30px;
 }
@@ -941,7 +941,7 @@ footer {
 	color: #996633;
 }
 
-/*======= QnA 페이지 =======*/
+/*======= QnA �럹�씠吏� =======*/
 .FAQ {
 	text-align: left;
 	height: 100%;
@@ -976,7 +976,7 @@ footer {
 	padding-left: 20px;
 }
 
-/*======= 공동구매 - 강아지용품 =======*/
+/*======= 怨듬룞援щℓ - 媛뺤븘吏��슜�뭹 =======*/
 .product {
 	margin-top: 50px;
 	margin-bottom: 50px;
@@ -1075,7 +1075,7 @@ footer {
 	padding: 15px 10px;
 }
 
-/*==================== 뽐내기게시판 =======================*/
+/*==================== 戮먮궡湲곌쾶�떆�뙋 =======================*/
 #boast-products {
 	text-align: center;
 	margin-top: 100px;
@@ -1237,7 +1237,7 @@ footer {
 	border: white;
 }
 
-/*=========== 자유게시판 ==============*/
+/*=========== �옄�쑀寃뚯떆�뙋 ==============*/
 .freeboard-title {
 	font-size: 25px;
 	color: #996633;
@@ -1343,7 +1343,7 @@ footer {
 	width: 200px;
 }
 
-/*=======================마이페이지===========================*/
+/*=======================留덉씠�럹�씠吏�===========================*/
 .mypage-wrap {
 	border-bottom: 1px gray solid;
 	padding-bottom: 30px;
@@ -1390,7 +1390,7 @@ footer {
 .mypage-menu img {
 	width: 70px;
 }
-/*======= 마이페이지 - 내가 쓴 글, 댓글 목록 =======*/
+/*======= 留덉씠�럹�씠吏� - �궡媛� �벖 湲�, �뙎湲� 紐⑸줉 =======*/
 .myArticle h3, .myComment h3 {
 	text-align: center;
 	padding-bottom: 30px;
@@ -1422,7 +1422,7 @@ footer {
 	margin-bottom: 30px;
 }
 
-/*======= 마이페이지 - 예약 내역 =======*/
+/*======= 留덉씠�럹�씠吏� - �삁�빟 �궡�뿭 =======*/
 .myReserve h3 {
 	text-align: center;
 	padding-bottom: 50px;
@@ -1445,7 +1445,7 @@ footer {
 	margin-top: 20px;
 }
 
-/*======= 마이페이지 - 찜한 상품 =======*/
+/*======= 留덉씠�럹�씠吏� - 李쒗븳 �긽�뭹 =======*/
 .myZzim h3 {
 	text-align: center;
 	padding-bottom: 70px;
@@ -1492,7 +1492,7 @@ footer {
 	padding-left: 20px;
 }
 
-/*======= 자유게시판 - 상세보기 페이지 =======*/
+/*======= �옄�쑀寃뚯떆�뙋 - �긽�꽭蹂닿린 �럹�씠吏� =======*/
 .writetitle {
 	padding: 100px;
 	font-size: 30px;
@@ -1543,7 +1543,7 @@ footer {
 	margin-right: 0px;
 }
 
-.commentArea { /*댓글 입력창*/
+.commentArea { /*�뙎湲� �엯�젰李�*/
 	width: 880px;
 	height: 80px;
 	border: none;
@@ -1560,7 +1560,7 @@ footer {
 	height: 35px;
 }
 
-/* 댓글 목록 */
+/* �뙎湲� 紐⑸줉 */
 .reply-group {
 	border-top: 1px solid #eee;
 	padding-top: 20px;
@@ -1576,7 +1576,7 @@ footer {
 	margin-left: 10px;
 }
 
-.reply-group .reply-right { /*댓글 수정, 삭제 버튼*/
+.reply-group .reply-right { /*�뙎湲� �닔�젙, �궘�젣 踰꾪듉*/
 	float: right;
 	width: 40px;
 	height: 30px;
@@ -1600,7 +1600,7 @@ footer {
 	padding: 10px;
 }
 
-.registCom { /*댓글 등록하기 버튼*/
+.registCom { /*�뙎湲� �벑濡앺븯湲� 踰꾪듉*/
 	width: 80px;
 	height: 100px;
 	margin-left: 10px;
@@ -1690,7 +1690,7 @@ footer {
 	padding: 7px;
 }
 
-/* 글쓰기 */
+/* 湲��벐湲� */
 .writetitle {
 	padding: 100px;
 	font-size: 30px;
@@ -1765,19 +1765,19 @@ footer {
 }
 
 /* boastDetail*/
-.modal-wrap {
-	/*display: none;*/
-	position: absolute;
+.boast-modal-wrap {
+	display: none;
+	position: fixed;
 	content: "";
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
 	top: 0;
 	left: 0;
-	z-index: 1;
+	z-index: 20;
 }
 
-.modal {
+.boast-modal {
 	/*display: none;*/
 	width: 1000px;
 	height: 600px;
@@ -1786,14 +1786,14 @@ footer {
 	left: 35%;
 	margin: -250px 0 0 -250px;
 	background: #fff;
-	z-index: 2;
+	z-index: 22;
 }
 
-.modal_close {
+.boast-modal_close {
 	width: 15px;
 	height: 15px;
 	position: absolute;
-	top: 10px;
+	top: -30px;
 	right: 10px;
 }
 
@@ -1914,7 +1914,7 @@ footer {
 	margin: 15px 5px;
 }
 
-/*======= QnA 페이지 =======*/
+/*======= QnA �럹�씠吏� =======*/
 .QNA h2 {
 	text-align: center;
 	font-size: 35px;
@@ -2125,7 +2125,7 @@ footer {
 	height: 40px;
 }
 
-/*============ 마이페이지- 내가 쓴 글, 내가 쓴 뽐내기 ==============*/
+/*============ 留덉씠�럹�씠吏�- �궡媛� �벖 湲�, �궡媛� �벖 戮먮궡湲� ==============*/
 .myBoast #boast-products {
 	text-align: center;
 	/* margin-top: 100px; */
@@ -2184,7 +2184,7 @@ footer {
 	text-align: center;
 }
 
-/*============내가 쓴 글 영역===============*/
+/*============�궡媛� �벖 湲� �쁺�뿭===============*/
 .myArticle {
 	margin: 0 auto;
 	width: 1100px;
@@ -3053,7 +3053,7 @@ footer {
 	width: 100%;
 	height: 400px;
 }
-/*=============== 시작! ===================*/
+/*=============== �떆�옉! ===================*/
 .reviews table, .qna table, .refund table {
 	border-top: 1px solid gray;
 	border-collapse: collapse;
@@ -3091,7 +3091,7 @@ footer {
 	margin: 0 auto;
 	width: 1000px;
 }
-/*<상품문의> 버튼*/
+/*<�긽�뭹臾몄쓽> 踰꾪듉*/
 .qna .p-qna {
 	/* position: absolute; */
 	display: block;
@@ -3150,7 +3150,7 @@ footer {
 
 /* orderpage*/
 .orderPage-table {
-	/*전체 테이블*/
+	/*�쟾泥� �뀒�씠釉�*/
 	width: 70%;
 	margin: auto;
 	margin-top: 3em;
@@ -3158,14 +3158,14 @@ footer {
 }
 
 .order-title {
-	/*맨 위에 제목 주문하기 부분*/
+	/*留� �쐞�뿉 �젣紐� 二쇰Ц�븯湲� 遺�遺�*/
 	text-align: center;
 	font-size: 23px;
 	position: relative;
 }
 
 .orderPage-name {
-	/*첫번째칸 부분*/
+	/*泥ル쾲吏몄뭏 遺�遺�*/
 	width: 80%;
 	padding: 0.5em;
 	display: inline-block;
@@ -3173,53 +3173,53 @@ footer {
 }
 
 .orderPage-info {
-	/*주소, 핸드폰번호, 요청사항*/
+	/*二쇱냼, �빖�뱶�룿踰덊샇, �슂泥��궗�빆*/
 	padding: 1em;
 }
 
 .orderPage-productTitle {
-	/*주문 상품*/
+	/*二쇰Ц �긽�뭹*/
 	padding: 0.5em;
 }
 
 .orderPage-product1 {
-	/*상품 사진*/
+	/*�긽�뭹 �궗吏�*/
 	width: 30%;
 	padding: 2em;
 }
 
 #orderPage-product {
-	/*상품 내용*/
+	/*�긽�뭹 �궡�슜*/
 	display: inline-block;
 	vertical-align: middle;
 	text-align: left;
 }
 
 .orderPage-product2 {
-	/*주문상품 내용*/
+	/*二쇰Ц�긽�뭹 �궡�슜*/
 	width: 40em;
 	padding-left: 2em;
 }
 
 .orderPage-product2-price {
-	/*주문상품 가격*/
+	/*二쇰Ц�긽�뭹 媛�寃�*/
 	text-align: right;
 }
 
 .orderPage-product h2 {
-	/*주문상품의 총금액(19,000원)*/
+	/*二쇰Ц�긽�뭹�쓽 珥앷툑�븸(19,000�썝)*/
 	width: 10em;
 	text-align: right;
 	padding-right: 2em;
 }
 
 .orderPage-account {
-	/*결제 금액*/
+	/*寃곗젣 湲덉븸*/
 	padding: 0.5em;
 }
 
 .orderPage-price {
-	/*상품 금액*/
+	/*�긽�뭹 湲덉븸*/
 	display: inline-block;
 	padding-left: 5em;
 }
@@ -3237,38 +3237,38 @@ footer {
 }
 
 .orderPage-price2 {
-	/*배송비*/
+	/*諛곗넚鍮�*/
 	display: inline-block;
 	padding-left: 5em;
 }
 
 .orderPage-allaccount {
-	/*총 결제금액*/
+	/*珥� 寃곗젣湲덉븸*/
 	padding-left: 5em;
 	display: inline-block;
 	padding-bottom: 1em;
 }
 
 .orderPage-payButton {
-	/*결제수단 버튼*/
+	/*寃곗젣�닔�떒 踰꾪듉*/
 	width: 10em;
 	padding: 0.2em;
 	margin: 1em;
 }
 
 .orderPage-payButtonAll {
-	/*결제수단버튼 세개 가운데 정렬*/
+	/*寃곗젣�닔�떒踰꾪듉 �꽭媛� 媛��슫�뜲 �젙�젹*/
 	text-align: center;
 }
 
 .orderPage-finalButton {
-	/*결제하기 버튼*/
+	/*寃곗젣�븯湲� 踰꾪듉*/
 	margin: 2em;
 	text-align: center;
 }
 
 .orderPage-finalButton1, .orderPage-finalButton2 {
-	/*결제, 취소 버튼*/
+	/*寃곗젣, 痍⑥냼 踰꾪듉*/
 	width: 20em;
 	padding: 0.3em;
 	font-size: 17px;

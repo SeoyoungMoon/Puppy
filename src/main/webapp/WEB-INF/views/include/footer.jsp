@@ -54,7 +54,7 @@
         
         <div class="footer-container clearfix">
             <div class="footer-logo">
-                <a href="#"><img src="./img/logowhite.png" alt="강아지유치원"></a>
+                <a href="#"><img src="<c:url value='/img/logowhite.png'/>" alt="강아지유치원"></a>
             </div>
             
             <div class="address">
